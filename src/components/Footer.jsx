@@ -65,7 +65,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="text-gray-600 text-sm leading-relaxed max-w-xs mb-6">
-              Sports cards, Pokémon, collectibles, and video games. Buy, sell, trade, and grade — all in one place on Brady Street.
+              Sports cards, Pokémon, collectibles, and video games. Buy, sell, trade, and grade — all in one place on Main Street.
             </p>
 
             {/* Social icons */}
@@ -126,21 +126,12 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-sm text-gray-600">
               <div>
-                <div className="text-gray-500 text-xs uppercase tracking-wider mb-1">Phone</div>
-                <a href="tel:+14143493060" className="hover:text-white transition-colors" style={{ color: '#00f2ff' }}>
-                  +1 414-349-3060
-                </a>
-              </div>
-              <div>
                 <div className="text-gray-500 text-xs uppercase tracking-wider mb-1">Email</div>
                 <a href="mailto:info@localcardshop.com" className="hover:text-white transition-colors">
                   info@localcardshop.com
                 </a>
               </div>
-              <div>
-                <div className="text-gray-500 text-xs uppercase tracking-wider mb-1">Address</div>
-                <span>1432 E Brady St<br />Milwaukee, WI 53202</span>
-              </div>
+
             </div>
           </div>
         </div>

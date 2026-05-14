@@ -133,7 +133,7 @@ export default function Hero() {
             <motion.p variants={itemVariants} className="text-gray-400 text-lg leading-relaxed max-w-md mb-10">
               Sports cards, Pokémon, collectibles, and video games — all under one roof.
               Break boxes, find singles, and get your slabs professionally graded.
-              <span className="text-gray-300 font-medium"> 1432 E Brady St, Milwaukee.</span>
+              <span className="text-gray-300 font-medium"> Main Street.</span>
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4">

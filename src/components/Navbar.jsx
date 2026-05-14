@@ -56,17 +56,6 @@ export default function Navbar() {
               />
             </a>
           ))}
-          <a
-            href="tel:+14143493060"
-            className="px-5 py-2 rounded text-sm font-bold tracking-widest uppercase border border-current transition-all duration-300 hover:bg-[#00f2ff] hover:text-black"
-            style={{
-              fontFamily: 'Orbitron, sans-serif',
-              color: '#00f2ff',
-              borderColor: '#00f2ff',
-            }}
-          >
-            Call Now
-          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -122,17 +111,7 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="tel:+14143493060"
-                className="mt-2 text-center px-5 py-3 rounded text-sm font-bold tracking-widest uppercase"
-                style={{
-                  fontFamily: 'Orbitron, sans-serif',
-                  color: '#00f2ff',
-                  border: '1px solid #00f2ff',
-                }}
-              >
-                +1 414-349-3060
-              </a>
+
             </nav>
           </motion.div>
         )}
