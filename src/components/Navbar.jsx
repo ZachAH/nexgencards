@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import logo from '../../images/nexgen_logo.jpg'
-
 const links = [
   { label: 'Breaks', href: '#breaks' },
   { label: 'Singles', href: '#singles' },
@@ -34,16 +32,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <img
-            src={logo}
-            alt="NexGen Cards"
-            className="h-10 w-10 rounded-sm object-cover"
-          />
           <span
             className="font-bold text-lg tracking-widest text-white uppercase hidden sm:block"
             style={{ fontFamily: 'Orbitron, sans-serif' }}
           >
-            NexGen <span style={{ color: '#00f2ff' }}>Cards</span>
+            Local <span style={{ color: '#00f2ff' }}>Card Shop</span>
           </span>
         </a>
 

@@ -1,6 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
-import headerImg from '../../images/nexgen_header.jpg'
 import charizardImg from '../../images/charizard.jpg'
 
 /* ── Sparkle particle ── */
@@ -101,11 +100,11 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0">
-        <img src={headerImg} alt="" className="w-full h-full object-cover object-center"
-          style={{ filter: 'brightness(0.2) saturate(1.2)' }} />
-        <div className="absolute inset-0" style={{
-          background: 'linear-gradient(135deg, rgba(10,10,10,0.97) 40%, rgba(0,242,255,0.03) 100%)',
+      <div className="absolute inset-0" style={{
+        background: 'linear-gradient(135deg, #0a0a0a 0%, #151515 50%, #0a0a0a 100%)',
+      }}>
+        <div className="absolute inset-0 opacity-30" style={{
+          background: 'linear-gradient(135deg, rgba(0,242,255,0.03) 0%, transparent 50%, rgba(255,77,0,0.03) 100%)',
         }} />
         <div className="absolute inset-0 pointer-events-none" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px)',

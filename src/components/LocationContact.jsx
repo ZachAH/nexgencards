@@ -20,8 +20,8 @@ const contactInfo = [
   },
   {
     label: 'Email',
-    value: 'info@nexgencards.com',
-    href: 'mailto:info@nexgencards.com',
+    value: 'info@localcardshop.com',
+    href: 'mailto:info@localcardshop.com',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-5 h-5">
         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -89,7 +89,7 @@ export default function LocationContact() {
             <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 z-10" style={{ borderColor: '#ff4d00' }} />
 
             <iframe
-              title="NexGen Cards Location"
+              title="Local Card Shop Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.7!2d-87.8913!3d43.0543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880502d7b6b6b6b7%3A0x1234!2s1432+E+Brady+St%2C+Milwaukee%2C+WI+53202!5e0!3m2!1sen!2sus!4v1!5m2!1sen!2sus&style=feature:all|element:geometry|color:0x0a0a0a&style=feature:all|element:labels.text.stroke|color:0x0a0a0a&style=feature:all|element:labels.text.fill|color:0x9d9d9d&style=feature:water|element:geometry|color:0x111111&style=feature:road|element:geometry|color:0x1a1a1a&style=feature:road.arterial|element:geometry|color:0x222222"
               width="100%"
               height="100%"

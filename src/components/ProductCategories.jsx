@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-import productsImg from '../../images/products.jpg'
-
 const categories = [
   {
     title: 'Sports Cards',
@@ -61,17 +59,6 @@ const cardVariants = {
 export default function ProductCategories() {
   return (
     <section id="categories" className="relative py-28 overflow-hidden">
-      {/* Background products image */}
-      <div className="absolute inset-0 pointer-events-none">
-        <img
-          src={productsImg}
-          alt=""
-          className="w-full h-full object-cover opacity-5"
-          style={{ filter: 'saturate(0)' }}
-        />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, #0a0a0a, transparent 30%, transparent 70%, #0a0a0a)' }} />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Section header */}
         <motion.div

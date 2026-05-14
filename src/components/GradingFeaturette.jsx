@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-import ownerImg from '../../images/owner.jpg'
-
 const steps = [
   {
     number: '01',
@@ -58,21 +56,44 @@ export default function GradingFeaturette() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative inline-block">
+            <div
+              className="relative rounded-lg p-10 text-center"
+              style={{
+                background: 'linear-gradient(135deg, #111, #1a1a1a)',
+                border: '1px solid rgba(0,242,255,0.15)',
+                minHeight: '480px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
               {/* Corner accents */}
-              <div className="absolute -top-3 -left-3 w-8 h-8 border-t-2 border-l-2 z-10" style={{ borderColor: '#00f2ff' }} />
-              <div className="absolute -bottom-3 -right-3 w-8 h-8 border-b-2 border-r-2 z-10" style={{ borderColor: '#ff4d00' }} />
+              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2" style={{ borderColor: '#00f2ff' }} />
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2" style={{ borderColor: '#ff4d00' }} />
 
-              <img
-                src={ownerImg}
-                alt="NexGen Cards owner helping a customer"
-                className="w-full max-w-md rounded-lg object-cover"
-                style={{
-                  height: '480px',
-                  filter: 'saturate(0.8)',
-                  border: '1px solid rgba(0,242,255,0.15)',
-                }}
-              />
+              <span
+                className="text-4xl lg:text-5xl font-black uppercase text-white mb-4"
+                style={{ fontFamily: 'Orbitron, sans-serif' }}
+              >
+                Local <span style={{ color: '#00f2ff' }}>Card Shop</span>
+              </span>
+              <p className="text-gray-500 text-sm max-w-xs mx-auto leading-relaxed mb-8">
+                Milwaukee's trusted hobby shop for sports cards, Pokémon, collectibles & grading since 2014.
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-6">
+                {[
+                  { label: 'Cards in Stock', value: '10K+' },
+                  { label: 'Slabs Graded', value: '500+' },
+                  { label: 'Happy Collectors', value: '1K+' },
+                ].map(({ label, value }) => (
+                  <div key={label} className="text-center">
+                    <div className="text-2xl font-black" style={{ fontFamily: 'Orbitron, sans-serif', color: '#00f2ff' }}>{value}</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest mt-1">{label}</div>
+                  </div>
+                ))}
+              </div>
 
               {/* Floating badge */}
               <motion.div
